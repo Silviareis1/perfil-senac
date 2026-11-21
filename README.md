@@ -27,7 +27,8 @@ Página de apresentação pessoal desenvolvida durante o curso de Desenvolviment
 - Reset de margem e espaçamento.
 - Variáveis CSS para a paleta de cores.
 - Flexbox para alinhamento e distribuição dos elementos.
-- Cabeçalho fixo com `position: sticky`.
+- Cabeçalho e menu fixos com `position: fixed`.
+- Layout responsivo para telas de até 600px.
 - Navegação suave com `scroll-behavior`.
 - Estados de interação com `:hover`.
 - Limitação de largura com `max-width`.
@@ -41,7 +42,7 @@ perfil-senac/
 │   ├── code-review.svg
 │   ├── code-xml.svg
 │   ├── programmer.svg
-│   ├── screencapture.pdf
+│   ├── screencapture.png
 │   └── typing-code.svg
 ├── index.html
 ├── style.css

@@ -65,23 +65,33 @@ h1 {
    font-size: 3.2rem;
    line-height: 1.2;
 }
+
 h3 {
    font-size: 2rem;
 }
+
 h4 {
    font-size: 1.8rem;
 }
+
 h5 {
    font-size: 1.6rem;
 }
+
 p,
 .menu a,
 address {
    font-size: 1.6rem;
 }
+
+address {
+   overflow-wrap: anywhere;
+}
+
 small {
    font-size: 1.4rem;
 }
+
 .conteudo p {
    font-size: 1.5rem;
 }
@@ -180,14 +190,17 @@ main {
 }
 
 .conteudo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    border-radius: 10px;
    padding: 15px;
-   gap: 5px;
    background-color: var(--cor-lilas-claro);
    flex-basis: 100px;
    flex-grow: 1;
    text-align: center;
-   height: 60px;
+   min-height: 60px;
+   height: auto;
 }
 
 /* RODAPÉ */
@@ -237,4 +250,89 @@ main {
 .rodape-base {
    text-align: center;
    color: var(--cor-primaria);
+}
+
+@media (max-width: 600px) {
+   body {
+      font-size: 1.6rem;
+      line-height: 1.5;
+   }
+
+   .hero .img-hero {
+      margin-right: 0;
+      margin-bottom: 20px;
+   }
+
+   .container img {
+      margin-left: 0;
+      margin-bottom: 20px;
+   }
+
+   h1 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+   }
+
+   h3 {
+      font-size: 1.5rem;
+   }
+
+   h4 {
+      font-size: 1.5rem;
+   }
+
+   h5 {
+      font-size: 1.4rem;
+   }
+
+   p,
+   .menu a,
+   address {
+      font-size: 1.4rem;
+   }
+
+   .menu {
+      gap: 1.5rem;
+   }
+
+   small {
+      font-size: 1.3rem;
+   }
+
+   .conteudo p {
+      font-size: 1.4rem;
+   }
+
+   .hero {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 1.6rem;
+   }
+
+   .container {
+      flex-direction: column;
+      padding: 1.6rem;
+   }
+
+   .card {
+      flex-wrap: wrap;
+      padding: 1.6rem;
+   }
+
+   .rodape {
+      width: 100%;
+   }
+
+   .rodape h3,
+   .rodape h4 {
+      margin-bottom: 0.8rem;
+   }
+
+   .rodape-conteudo {
+      flex-direction: column;
+      width: 100%;
+      gap: 2.5rem;
+   }
 }
